@@ -14,7 +14,10 @@ CameraController.prototype = {
   	alert("We got into the camera controller.")
     var photoButton = this.view.getcameraButtonSelector()
     // console.log(photoForm)
-    photoButton.on("touchstart", this.beginCamera.bind(this))
+    console.log(photoButton)
+    photoButton.on("click", function() {
+    	alert("CLICKED IT!!")
+    })
   },
   beginCamera: function(event) {
   	event.preventDefault();
