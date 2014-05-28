@@ -20,5 +20,9 @@ PhotoController.prototype = {
 		for (var i = 0; i < photoUrls.length; i++) {
 			this.view.appendPhoto(photoUrls[i])
 		};
-	} 
+	},
+	updatePhotoFeed: function(photoArray) {
+		var photoUrlToPrepend = PhotoHandler.getLatestPhoto(photoArray)
+		this.view.prependNewPhoto(photoUrlToPrepend)
+	}
 }

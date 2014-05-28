@@ -13,11 +13,11 @@ PhotoView.prototype = {
 		photo.setAttribute('src', photoUrl);
 		return photo
 	},
-	// prependNewPhoto: function(photoUrl) {
-	// 	var newPhoto = this.createPhotoTemplate(photoUrl);
-	// 	var photoFeed = this.returnFeedSelector()
-	// 	photoFeed.insertBefore(newPhoto, photoFeed.firstChild)
-	// },
+	prependNewPhoto: function(photoUrl) {
+		var newPhoto = this.createPhotoTemplate(photoUrl);
+		var photoFeed = this.returnFeedSelector()
+		photoFeed.insertBefore(newPhoto, photoFeed.firstChild)
+	},
 	returnFeedSelector: function() {
 		return document.getElementById(this.feed)
 	}

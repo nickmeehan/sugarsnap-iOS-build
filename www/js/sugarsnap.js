@@ -12,9 +12,11 @@ SugarSnap = {
 		firebaseController.subscribeListenerForInitialPhotos(photoController)
 		firebaseController.subscribeListenerForLivePhotoUpdates(photoController)
 
+		// infinite scroll needs to be added
+
 		new CameraController(new CameraView()).bindCameraListener()
 	},
 	getCoordinatesFailure: function() {
-		navigator.notification.alert("We're sorry we couldn't find you! We'll keep searching...", console.log('Unable to get position.'))
+		navigator.notification.alert("We're sorry we couldn't find you! We'll keep searching...", this.initialize)
 	}
 }
