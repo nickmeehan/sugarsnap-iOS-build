@@ -11,12 +11,11 @@ function CameraController(view) {
 
 CameraController.prototype = {
   bindCameraListener: function() {
-  	navigator.notification.alert("cannot alert variable names", null)
-    // var photoButton = this.view.getcameraButtonSelector()
-    // navigator.notification.alert("what?", null)
-    // photoButton.click(function() {
-    // 	alert("CLICKED IT!!")
-    // })
+    var photoButton = this.view.getCameraButtonSelector()
+    navigator.notification.alert("i got stuff",console.log(''))
+    photoButton.click(function() {
+    	alert("CLICKED IT!!")
+    })
   },
   beginCamera: function(event) {
   	event.preventDefault();
@@ -26,7 +25,7 @@ CameraController.prototype = {
   	alert("SUCCESS!!")
   },
   cameraError: function() {
-  	navigator.notification.alert("You should head to the genius bar, something went wrong.", null)
+  	navigator.notification.alert("You should head to the genius bar, something went wrong.", console.log(''))
   },
   sendPhotoToServer: function(event) {
   //   event.preventDefault();

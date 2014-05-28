@@ -4,7 +4,6 @@ function CameraView() {
 
 CameraView.prototype = {
   getCameraButtonSelector: function() {
-  	// navigator.notification.alert("i got called", null)
-    // return $(this.cameraButtonSelector)
+    return $(this.cameraButtonSelector)
   }
 }
