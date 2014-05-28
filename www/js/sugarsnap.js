@@ -10,6 +10,7 @@ SugarSnap = {
 		alert(firebaseController.latitude)
 		var photoController = new PhotoController(new PhotoView())
 		firebaseController.subscribeListenerForInitialPhotos(photoController)
+		firebaseController.subscribeListenerForLivePhotoUpdates(photoController)
 
 		new CameraController(new CameraView()).bindCameraListener()
 	},

@@ -4,12 +4,12 @@ var FirebaseCommunicator = {
       photoController.initializeFeed(photoArray);
       // photoController.initializeInfiniteScroll(photoArray);
     })
+  },
+  getLivePhotoUpdate: function(firebaseController, photoController) {
+    firebaseController.geo.onPointsNearLoc([firebaseController.latitude, firebaseController.longitude], firebaseController.radius, function(photoArray) {
+      photoController.updatePhotoFeed(photoArray);
+    })
   }//,
-  // addAutomaticUpdateToUserCoordinates: function(controller) {
-  //   controller.geo.onPointsNearLoc(controller.coordinates, controller.radius, function(array) {
-  //     controller.updatePhotoStream(array);
-  //   })
-  // }//,
   // sendImageToFirebase: function(url) {
   //   var geo = FirebaseConnection.getGeo()
   //   var timeStamp = Date.now()
