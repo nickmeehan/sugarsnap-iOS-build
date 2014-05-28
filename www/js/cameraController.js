@@ -12,14 +12,12 @@ function CameraController(view) {
 CameraController.prototype = {
   bindCameraListener: function() {
     var photoButton = this.view.getCameraButtonSelector()
-    navigator.notification.alert("i got stuff",console.log(''))
-    photoButton.click(function() {
-    	alert("CLICKED IT!!")
-    })
+    photoButton.addEventListener('click', this.beginCamera.bind(this), false)
   },
   beginCamera: function(event) {
   	event.preventDefault();
-  	navigator.camera.getPicture(cameraSuccess, cameraError, this.cameraOptions)
+  	alert("cool beans")
+  	navigator.camera.getPicture(this.cameraSuccess, this.cameraError, this.cameraOptions)
   },
   cameraSuccess: function() {
   	alert("SUCCESS!!")
@@ -48,3 +46,4 @@ CameraController.prototype = {
   //   xhr.send(formData);
   }
 }
+
