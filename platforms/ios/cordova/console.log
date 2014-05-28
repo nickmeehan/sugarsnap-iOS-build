@@ -218,3 +218,24 @@ Terminating in response to SpringBoard's termination.
 2014-05-28 00:20:40.691 HelloWorld[36473:70b] Finished load of: file:///Users/nickmeehan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/20A37359-9701-466D-8D69-50950782D05B/HelloWorld.app/www/index.html
 2014-05-28 00:20:47.559 HelloWorld[36473:70b] Camera.getPicture: source type 1 not available.
 2014-05-28 00:20:47.571 HelloWorld[36473:70b] THREAD WARNING: ['Notification'] took '10.335938' ms. Plugin should use a background thread.
+2014-05-28 00:27:15.459 HelloWorld[37025:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-28 00:27:15.473 HelloWorld[37025:70b] Unlimited access to network resources
+2014-05-28 00:27:15.636 HelloWorld[37025:70b] Resetting plugins due to page load.
+2014-05-28 00:27:16.104 HelloWorld[37025:70b] Finished load of: file:///Users/nickmeehan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/20A37359-9701-466D-8D69-50950782D05B/HelloWorld.app/www/index.html
+2014-05-28 00:28:09.588 HelloWorld[37409:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-28 00:28:09.600 HelloWorld[37409:70b] Unlimited access to network resources
+2014-05-28 00:28:09.752 HelloWorld[37409:70b] Resetting plugins due to page load.
+2014-05-28 00:28:10.226 HelloWorld[37409:70b] Finished load of: file:///Users/nickmeehan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/20A37359-9701-466D-8D69-50950782D05B/HelloWorld.app/www/index.html
+2014-05-28 00:28:17.127 HelloWorld[37409:70b] Camera.getPicture: source type 1 not available.
+2014-05-28 00:29:25.289 HelloWorld[37804:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-28 00:29:25.300 HelloWorld[37804:70b] Unlimited access to network resources
+2014-05-28 00:29:25.463 HelloWorld[37804:70b] Resetting plugins due to page load.
+2014-05-28 00:29:26.062 HelloWorld[37804:70b] Finished load of: file:///Users/nickmeehan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/20A37359-9701-466D-8D69-50950782D05B/HelloWorld.app/www/index.html
+2014-05-28 00:29:32.831 HelloWorld[37804:70b] Camera.getPicture: source type 1 not available.
+2014-05-28 00:29:32.843 HelloWorld[37804:70b] THREAD WARNING: ['Notification'] took '10.296875' ms. Plugin should use a background thread.
+2014-05-28 00:30:13.722 HelloWorld[38187:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-28 00:30:13.733 HelloWorld[38187:70b] Unlimited access to network resources
+2014-05-28 00:30:13.901 HelloWorld[38187:70b] Resetting plugins due to page load.
+2014-05-28 00:30:14.540 HelloWorld[38187:70b] Finished load of: file:///Users/nickmeehan/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/20A37359-9701-466D-8D69-50950782D05B/HelloWorld.app/www/index.html
+2014-05-28 00:30:22.040 HelloWorld[38187:70b] Camera.getPicture: source type 1 not available.
+2014-05-28 00:31:51.349 HelloWorld[38187:70b] Camera.getPicture: source type 1 not available.

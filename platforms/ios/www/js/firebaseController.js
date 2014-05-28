@@ -6,8 +6,8 @@ function FirebaseController(position, firebaseConnectionGeo) {
 }
 
 
-// FirebaseController.prototype = {
-// 	subscribeListenerForInitialPhotos: function(photoController) {
-// 		FireaseCommunicator.getInitialPhotos(this, photoController)
-// 	}
-// }
+FirebaseController.prototype = {
+	subscribeListenerForInitialPhotos: function(photoController) {
+		FirebaseCommunicator.getInitialPhotos(this, photoController)
+	}
+}
