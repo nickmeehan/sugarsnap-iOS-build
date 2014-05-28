@@ -25,9 +25,11 @@
         <link href='http://fonts.googleapis.com/css?family=Miltonian+Tattoo' rel='stylesheet' type='text/css'>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" 
         <title>sugarsnap</title>
     </head>
     <body>
+
         <header>
           <div id="header">
             <h1>sugarsnap.</h1>
@@ -36,23 +38,28 @@
             <p>Share photos and see what is around you with Sugarsnap. Track photos in places you've visited automatically</p>
           </div>
         </header>
-        
 
         <div class='feed-container'>
           <div id='feed'>
-            <img src="http://s3-us-west-1.amazonaws.com/sugarsnapme/photos/images/000/000/116/medium/image.jpg">
-            <img src="http://s3-us-west-1.amazonaws.com/sugarsnapme/photos/images/000/000/115/medium/image.jpg">
+            <img class="hidden">
           </div>
         </div>
-        
+
         <footer>
           <button id="camera_button">take photo</button>
         </footer>
+        
 
         <script type="text/javascript" src="phonegap.js"></script>
+        <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+        <script type="text/javascript" src="js/photoView.js"></script>
+        <script type="text/javascript" src="js/photoHandler.js"></script>
+        <script type="text/javascript" src="js/photoController.js"></script>
+        <script type="text/javascript" src="js/firebaseConnection.js"></script>
+        <script type="text/javascript" src="js/firebaseCommunicator.js"></script>
+        <script type="text/javascript" src="js/firebaseController.js"></script>
         <script type="text/javascript" src="js/cameraView.js"></script>
         <script type="text/javascript" src="js/cameraController.js"></script>
-        <script type="text/javascript" src="js/locationUpdater.js"></script>
         <script type="text/javascript" src="js/sugarsnap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

@@ -19,6 +19,9 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+    </feature>
     <name>HelloWorld</name>
     <description>
         Hello World sample application that responds to the deviceready event.
@@ -70,6 +73,7 @@
     <plugin name="Camera" value="CDVCamera" />
     <plugin name="Geolocation" value="CDVLocation" />
     <plugin name="Notification" value="CDVNotification" />
+    <plugin name="File" value="CDVFile" />
     <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
         <params name="ios-package" value="CDVCamera" />
@@ -82,7 +86,7 @@
         <param name="ios-package" value="CDVNotification" />
         <params name="ios-package" value="CDVNotification" />
     </feature>
-    <feature name="Console">
-        <param name="ios-package" value="CDVLogger" />
+    <feature name="File">
+        <params name="ios-package" value="CDVFile" />
     </feature>
 </widget>

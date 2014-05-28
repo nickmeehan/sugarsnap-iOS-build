@@ -97,6 +97,7 @@
     <plugin name="Camera" value="CDVCamera"/>
     <plugin name="Geolocation" value="CDVLocation"/>
     <plugin name="Notification" value="CDVNotification"/>
+    <plugin name="File" value="CDVFile"/>
 
     <feature name="Camera">
       <params name="ios-package" value="CDVCamera"/>
@@ -108,6 +109,10 @@
 
     <feature name="Notification">
       <params name="ios-package" value="CDVNotification"/>
+    </feature>
+
+    <feature name="File">
+        <params name="ios-package" value="CDVFile"/>
     </feature>
 
 </widget>

@@ -1,13 +1,29 @@
 function CameraController(view) {
   this.view = view;
+  this.cameraOptions = {
+  	quality: 49,
+  	destinationType: Camera.DestinationType.FILE_URI,
+  	encodingType: Camera.EncodingType.PNG,
+  	targetWidth: 320,
+  	targetHeight: 320
+  }
 }
 
 CameraController.prototype = {
   bindCameraListener: function() {
-  	alert("We got into the camera controller.")
-    var photoForm = this.view.getFormSelector()
-    console.log(photoForm)
-    // photoForm.on("submit", this.sendPhotoToServer.bind(this))
+    var photoButton = this.view.getCameraButtonSelector()
+    photoButton.addEventListener('click', this.beginCamera.bind(this), false)
+  },
+  beginCamera: function(event) {
+  	event.preventDefault();
+  	alert("cool beans")
+  	navigator.camera.getPicture(this.cameraSuccess, this.cameraError, this.cameraOptions)
+  },
+  cameraSuccess: function() {
+  	alert("SUCCESS!!")
+  },
+  cameraError: function() {
+  	navigator.notification.alert("You should head to the genius bar, something went wrong.", console.log(''))
   },
   sendPhotoToServer: function(event) {
   //   event.preventDefault();
@@ -30,3 +46,4 @@ CameraController.prototype = {
   //   xhr.send(formData);
   }
 }
+

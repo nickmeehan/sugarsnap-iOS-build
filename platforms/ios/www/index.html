@@ -22,47 +22,33 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <link href='http://fonts.googleapis.com/css?family=Miltonian+Tattoo' rel='stylesheet' type='text/css'>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>sugarsnap</title>
     </head>
     <body>
-        <header id="header">
-          <h1>sugarsnap.</h1>
+        <header>
+          <div id="header">
+            <h1>sugarsnap.</h1>
+          </div>
+          <div id="subheader">
+            <p>Share photos and see what is around you with Sugarsnap. Track photos in places you've visited automatically</p>
+          </div>
         </header>
+        
 
-        <div>
-          <p>Share photos and see what is around you with Sugarsnap. Track photos in places you&#39;ve visited automatically</p>
-        </div>
-            
-        <div>
-          <div>
+        <div class='feed-container'>
+          <div id='feed'>
             <img src="http://s3-us-west-1.amazonaws.com/sugarsnapme/photos/images/000/000/116/medium/image.jpg">
-            <img>
             <img src="http://s3-us-west-1.amazonaws.com/sugarsnapme/photos/images/000/000/115/medium/image.jpg">
-            <img src="http://s3-us-west-1.amazonaws.com/sugarsnapme/photos/images/000/000/114/medium/image.jpg">
-            <img src="http://s3-us-west-1.amazonaws.com/sugarsnapme/photos/images/000/000/113/medium/image.jpg">
-            <img src="http://s3-us-west-1.amazonaws.com/sugarsnapme/photos/images/000/000/112/medium/image.jpg">
-            <img src="http://s3-us-west-1.amazonaws.com/sugarsnapme/photos/images/000/000/111/medium/image.jpg">
-            <img src="http://s3-us-west-1.amazonaws.com/sugarsnapme/photos/images/000/000/110/medium/image.jpg">
-            <img src="http://s3-us-west-1.amazonaws.com/sugarsnapme/photos/images/000/000/109/medium/image.jpg">
-            <img src="http://s3-us-west-1.amazonaws.com/sugarsnapme/photos/images/000/000/108/medium/image.jpg">
-            <img src="http://s3-us-west-1.amazonaws.com/sugarsnapper/photos/images/000/000/008/medium/Screen_Shot_2014-05-08_at_2.32.06_PM.png">
           </div>
         </div>
         
-        <div>
-          <form accept-charset="UTF-8" action="http://photos" enctype="multipart/form-data" method="post" target="_blank" onsubmit="return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);">
-            <div style="margin:0;padding:0;display:inline">
-            <input name="utf8" type="hidden" value="✓">
-            </div>
-            <input accept="image/*" name="photo[image]" type="file">
-            <img src="http://icon-camera-128.png">
-            <input name="commit" type="submit" value="Submit">
-            <img src="http://img/cloud_arrow_up.png">
-          </form>
-        </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <footer>
+          <button id="camera_button">take photo</button>
+        </footer>
+
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/cameraView.js"></script>
         <script type="text/javascript" src="js/cameraController.js"></script>

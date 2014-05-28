@@ -1,9 +1,9 @@
 function CameraView() {
-  this.formSelector = 'form';
+  this.cameraButtonSelector = 'camera_button';
 }
 
 CameraView.prototype = {
-  getFormSelector: function() {
-    return $(this.formSelector)
+  getCameraButtonSelector: function() {
+    return document.getElementById(this.cameraButtonSelector)
   }
 }
