@@ -1,6 +1,6 @@
 SugarSnap = {
 	initialize: function() {
-		navigator.geolocation.getCurrentPosition(this.getCoordinatesSuccess, this.getCoordinatesFailure)		
+		navigator.geolocation.getCurrentPosition(this.getCoordinatesSuccess, this.getCoordinatesFailure)
 	},
 	getCoordinatesSuccess: function(position) {
 		// start spinner here
@@ -13,6 +13,7 @@ SugarSnap = {
 		firebaseController.subscribeListenerForLivePhotoUpdates(photoController)
 
 		// infinite scroll needs to be added
+		InfiniteScroller.checkScrollThreshold(photoController)
 
 		new CameraController(new CameraView()).bindCameraListener()
 	},
